@@ -86,8 +86,8 @@ const Auth = () => {
 
   return (
     <div className="h-[100vh] w-[100vw] flex items-center justify-center">
-      <div className="h-[80vh] bg-white  border-2 border-white  text-opacity-90 shadow-2xl w-[80vw] md:w-[90vw] lg:w-[70vw] xl:w-[60vw] rounded-3xl grid xl:grid-cols-2">
-        <div className="flex flex-col gap-10 items-center justify-center">
+      <div className="h-[80vh] bg-white border-2 border-white text-opacity-90 shadow-2xl w-[80vw] md:w-[90vw] lg:w-[70vw] xl:w-[60vw] rounded-3xl grid xl:grid-cols-2 overflow-hidden">
+        <div className="flex flex-col gap-6 items-center justify-center overflow-y-auto py-8">
           <div className="flex  items-center justify-center flex-col">
             <div className="flex  items-center justify-center">
               <h1 className="text-5xl md:text-6xl font-bold">Welcome</h1>
@@ -113,7 +113,7 @@ const Auth = () => {
                   Signup
                 </TabsTrigger>
               </TabsList>
-              <TabsContent value="login" className="flex flex-col gap-5 mt-10">
+              <TabsContent value="login" className="flex flex-col gap-5 mt-0.5">
                 <Input
                   placeholder="Email"
                   type="email"
@@ -162,7 +162,7 @@ const Auth = () => {
           </div>
         </div>
         <div className="hidden xl:flex justify-center items-center ">
-          <img src={Background} className="h-[700px] " />
+          <img src={Background} className="h-full w-full object-cover" />
         </div>
 
         
